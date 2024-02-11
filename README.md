@@ -5,6 +5,7 @@ The dataset comprises information from 10,000 bank customers, with 7,964 custome
 comprehensive understanding of customer behavior and attributes. This project aimed to analyze factors contributing to customer churn and develop predictive models to assist banks in identifying and retaining potentially at-risk customers. The findings and insights derived from this project contribute to the ongoing efforts in enhancing customer retention strategies within the banking sector.
 
 FEATURES :
+
 RowNumber—corresponds to the record (row) number and has no effect on the output.
 
 CustomerId—contains random values and has no effect on customer leaving the bank.
@@ -32,3 +33,8 @@ IsActiveMember—active customers are less likely to leave the bank.
 EstimatedSalary—as with balance, people with lower salaries are more likely to leave the bank compared to those with higher salaries.
 
 Exited—whether or not the customer left the bank.
+
+In this dataset, I addressed various preprocessing tasks to ensure its integrity and suitability for analysis. Firstly, I managed duplicate entries, ensuring the dataset's consistency and reliability. Secondly, I employed encoding techniques using pandas' 'get_dummies' function to convert categorical variables into numerical representations, facilitating subsequent analysis. Additionally, I handled missing data, ensuring minimal impact on the overall dataset quality. Furthermore, I conducted thorough data visualizations to gain insights into the dataset's characteristics, distribution, and potential relationships among variables. These preprocessing steps were instrumental in preparing the dataset for subsequent modeling and analysis, laying a solid foundation for robust and accurate predictive modeling of bank customer churn.
+
+In the data modeling phase, I employed four distinct machine learning algorithms: Decision Tree, Logistic Regression, Support Vector Machine (SVM), and Random Forest. After rigorous evaluation and comparison, Random Forest emerged as the most effective model, achieving an impressive accuracy rate of 86%. Consequently, I selected Random Forest as the primary machine learning model for predicting bank customer churn. This decision was based on its superior performance in accurately classifying customer churn, highlighting its potential as a reliable predictive tool in real-world banking applications.
+
